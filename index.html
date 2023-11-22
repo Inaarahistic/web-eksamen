@@ -1,4 +1,6 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Home</title>
@@ -7,70 +9,95 @@
     <meta name="keywords" content="home">
     <meta name="author" content="Liza Bachalova">
     <meta name="description" content="Home page">
-
+    <script src="https://kit.fontawesome.com/454e802897.js" crossorigin="anonymous"></script>
   </head>
+  
   <body>
-    <div id="grid-container">
-
-      <header>
-        <img src="img/logo2.png" alt="logo" id="logo">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-
+    <header class="header-container">
+      <nav>
+        <ul>
+          <li><a href="index.html"><img src="img/logo2.png" alt="logo" id="logo"></a></li>
+          <li class="home-btn"><a href="index.html">Home</a></li>
+          <li><a href="products.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="contact-btn"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
       <section class="img1">
-        <img src="https://placehold.co/600x400" alt="placeholder">
-        <h1>Compelling headline</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric</p>
-        <p class="img1-serivce">Read more about our services</p>
+        <img width="600" height="400" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe" class="img1-img">
+        <section class="img1-text">
+          <h1 class="img1-h1">Compelling headline</h1>
+          <p class="img1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric. </p>
+          <p class="img1-service">Read more about our services</p>
+        </section>
+        
       </section>
+      
       <section class="text1">
-        <h2>Engaging subheading. What can you help your visitors with?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc </p>
+        <h2 class="text1-h2">Engaging subheading. What can you help your visitors with?</h2>
+        <p class="text1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
       </section>
-      <img src="https://placehold.co/600x400" alt="placeholder" class="img2">
+
+      <section class="img2-container">
+        <img src="img/startup-593341_1280.jpg" alt="a table with laptop and notebooks" class="img2">
+      </section>
+
       <section class="text2">
-        <h2>About our company</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidun consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc </p>
+        <h2 class="text2-h2">About our company</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidun consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric. consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric </p>
         <p class="text2-read-more">Read more about us</p>
       </section>
-      <seciton class="services">
-        <h2>Our Services</h2>
-        <h3>Branding</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric</p>
-        <h3>Branding</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric</p>
-        <h3>Branding</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric</p>
-        <h3>Branding</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric</p>
-      </seciton>
 
-      <footer>
-        <section class="newsletter">
-          <h2>Sign up for our newsletter</h2>
-          <form>
-            <input type="text" name="email" placeholder="nora@epost.no">
-            <input type="submit" value="Sigg me up!">
-          </form>
+      <section class="services">
+        <h2 class="services-h2">Our Services</h2>
 
+        <section class="people">
+          <section class="people-icon"><i class="fa-solid fa-users"></i></section>
+          
+          <h3>Branding</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric</p>
         </section>
-        <section class="logo2">
-          <img src="img/logo2.png" alt="logo">
+        
+        <section class="cloud">
+          <section class="cloud-icon"><i class="fa-solid fa-cloud-arrow-up"></i></section>
+          
+          <h3>Branding</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric</p>
         </section>
 
-      </footer>
+        <section class="code">
+          <section class="code-icon"><i class="fa-solid fa-code"></i></section>
+          
+          <h3>Branding</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric</p>
+        </section>
+        
+        <section class="wifi">
+          <section class="wifi-icon"><i class="fa-solid fa-wifi"></i></section>
+          
+          <h3>Branding</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric</p>
+        </section>
+        
+      </section>
+    </main>
 
+    <footer class="footer-container">
+      <section class="newsletter">
+        <h2 class="newsletter-h2">Sign up for our newsletter</h2>
+        <form class="newsletter-form">
+          <input class="newsletter-epost" type="text" name="email" placeholder="Nora@epost.no">
+          <input class="newsletter-submit" type="submit" value="Sign me up!">
+        </form>
+      </section>
 
+      <section class="logo2">
+        <img class="logo2-img" src="img/logo2.png" alt="logo">
+      </section>
 
-
-    </div>
+    </footer>
 
   </body>
 </html>

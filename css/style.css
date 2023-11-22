@@ -1,37 +1,260 @@
-.grid.container{
+*{
+  text-decoration: none;
+  list-style-type: none;
+  color:black;
+  margin:0;
+  padding:0;
+  font-family: sans-serif, Arial, Helvetica, sans-serif;
+}
+.header-container{
   display:grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-  "header"
-  "text1"
-  "img1"
-  "text2"
-  "services"
-  "footer"
-  ;
+  grid-template-rows: 1fr;
+  grid-template-areas: "nav";
 }
+/* HEADER */
 
 header{
-  grid-area: header;
+  display:flex;
+  justify-content: center;
+  margin:15px;
+}
+#logo{
+  width:100px;
 }
 
-.text1{
-  grid-area: text1;
+nav{
+  grid-area:nav;
+}
+nav ul li{
+  display:flex;
+  justify-content: center;
+  padding:5px;
+  font-size:14px;
+}
+.home-btn{
+  text-decoration: underline;
+  text-underline-offset:5px;
+  text-decoration-color:#e6bd43;
+  text-decoration-thickness: 1.8px;;
+  font-weight:800;
+}
+.contact-btn{
+  background-color: #e6bd43;
+  font-weight: 800;
 }
 
+/* MAIN */
+.main-container1{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "img1"
+  "text1"
+  "img2-container"
+  "text2"
+  "services";
+}
+
+/* IMG1 */
 .img1{
   grid-area: img1;
+  position:relative;
+  display:inline-block;
+}
+.img1-img{
+  object-fit: cover;
+  width:100%;
+  opacity:40%;
+}
+.img1-text{
+  transform: translate(-50%, -50%);
+  top:50%;
+  left:50%;
+  position:absolute;
+  width:100%;
+  text-align:center;
+}
+.img1-p{
+  margin:10px;
+  padding:10px;
+}
+.img1-h1{
+  font-weight:800;
+  padding-left:80px;
+  padding-right:80px;
+  padding-bottom:20px;
+  font-size:25px;
+}
+.img1-service{
+  background-color:#e6bd43;
+  font-weight:800;
+  display: inline-block;
+  padding:10px;
+  padding-right:61px;
+  margin-left:40px;
+  margin-right:40px;
+  text-align:left;
 }
 
+/* TEXT1 */
 .text1{
   grid-area: text1;
+  padding:30px;
+}
+.text1-h2{
+  padding-bottom: 40px;
+  display:flex;
+  justify-content: center;
+  text-align:center;
+}
+.text1-p{
+  display:flex;
+  justify-content: center;
+  text-align:center;
+}
+/* IMG2-CONTAINER */
+.img2-container{
+  background-color: #e6bd43
+}
+.img2{
+  grid-area: img2-container;
+  width:80%;
+  padding:30px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+/* TEXT2 */
+.text2{
+  grid-area: text2;
+  background-color:#e6bd43;
+  padding-left: 85px;
+  padding-right:85px;
+  padding-top:40px;
+  padding-bottom: 0px;
+}
+.text2-h2{
+  padding-bottom: 40px;
+}
+.text2-read-more{
+  padding:10px;
+  padding-right:80px;
+  border-style:solid;
+  border-width:2px;
+  font-weight:bold;
+  margin-top:15px;
+  margin-bottom:15px;
+  text-align:left;
+  margin-bottom:100px;
 }
 
+/* SERVICES */
 .services{
   grid-area: services;
+  text-align:center;
+  padding-left: 60px;
+  padding-right:60px;
+}
+.services-h2{
+  padding:20px;
+  padding-top:80px;
+  padding-bottom:60px;
+  display:flex;
+  justify-content: center;
+}
+.people, .cloud, .code, .wifi{
+  padding-bottom:70px;
+}
+.people-icon, .cloud-icon, .code-icon, .wifi-icon{
+  font-size:25px;
+  margin-bottom:20px;
+}
+.services h3{
+  margin-bottom:20px;
 }
 
-footer{
-  grid-area: footer;
+.footer-container{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "newsletter"
+  "logo2"
+
+}
+.newsletter{
+  grid-area:newsletter;
+  background-color:#ededed;
+  padding: 25px;
+  padding-top:60px;
+  padding-bottom:40px;
+}
+.newsletter-h2{
+  padding-bottom: 20px;
+  font-size:20px;
+  display:flex;
+  justify-content: center;
+}
+.newsletter-form{
+  display:flex;
+  justify-content: center;
+  gap:10px;
+}
+
+.newsletter-epost{
+ border:none;
+ padding:10px;
+ width:70%;
+}
+.newsletter-submit{
+  border:none;
+  padding:10px;
+  background-color: #e6bd43;
+  font-weight:bold;
+}
+.logo2{
+  grid-area:logo2;
+  background-color: #252525;
+  display:flex;
+  justify-content: center;
+  padding:40px;
+}
+.logo2-img{
+  width:140px;
+}
+
+/* PRODUCTS */
+
+.grid-container2{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "img3"
+  "explore"
+  "brending"
+  "design"
+  "development";
+}
+
+.img3{
+  grid-area: img3;
+}
+
+.explore{
+  grid-area: explore;
+}
+
+.brending{
+  grid-area:brending;
+}
+
+.design{
+  grid-area:design;
+}
+
+.development{
+  grid-area:development;
 }
