@@ -3,12 +3,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="home">
+    <meta name="keywords" content="portfolio">
     <meta name="author" content="Liza Bachalova">
-    <meta name="description" content="Home page">
+    <meta name="description" content="Portfolio page">
     <script src="https://kit.fontawesome.com/454e802897.js" crossorigin="anonymous"></script>
   </head>
 
@@ -17,13 +17,14 @@
       <nav>
         <ul>
           <li><a href="index.html"><img src="img/logo2.png" alt="logo" id="logo"></a></li>
-          <li class="home-btn2"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="products-btn"><a href="products.html">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
           <li class="contact-btn"><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main class="main-container2">
       <section class="img3">
         <img src="img/startup-593341_1280.jpg" alt="a table with laptop and notebooks" class="img3-img">
@@ -33,13 +34,13 @@
       <section class="explore">
         <h2>Explore previous jobs</h2>
           <section class="explore-p">
-            <p class="explore-branding">Branding</p>
-            <p class="explore-design">Design</p>
-            <p class="explore-development">Development</p>
+            <p class="explore-branding"><a href="#brending">Branding</a></p>
+            <p class="explore-design"><a href="#design">Design</a></p>
+            <p class="explore-development"><a href="#development">Development</a></p>
           </section>
       </section>
 
-      <section class="brending">
+      <section id="brending">
         <h2>Branding</h2>
         <section>
           <img class="brending-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
@@ -61,11 +62,11 @@
         </section>
       </section>
 
-      <section class="design">
+      <section id="design">
         <h2>Design</h2>
 
         <section>
-          <img class="brending-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+          <img class="design-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
         </section>
 
         <section>
@@ -80,7 +81,7 @@
 
       </section>
 
-      <section class="development">
+      <section id="development">
         <h2>Development</h2>
         <section>
           <img class="development-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
@@ -98,7 +99,7 @@
     </main>
 
     <footer class="footer-container2">
-      <section class="logo2">
+      <section class="footer-logo">
         <img class="logo2-img" src="img/logo2.png" alt="logo">
       </section>
 
@@ -107,9 +108,9 @@
       </section>
       
       <ul class="social">
-        <li class="fab fa-facebook-square"></li>
-        <li class="fab fa-twitter-square"></li>
-        <li class="fab fa-instagram-square"></li>
+        <li><a  id="facebook" class="fab fa-facebook-square" href="https://www.facebook.com"></a></li>
+        <li><a id="twitter" class="fab fa-twitter-square" href="https://twitter.com/"></a></li>
+        <li><a id="instagram" class="fab fa-instagram-square" href="https://www.instagram.com"></a></li>
       </ul>
 
     </footer>

@@ -8,3 +8,11 @@ Image by <a href="https://pixabay.com/users/freephotocc-2275370/?utm_source=link
 
 text-underline-offset kilde:
 https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset
+
+
+Brukte ChatGPT til å finne ut hvordan jeg skulle linke til en seksjon på samme siden. Fant ut at jeg skulle bruke id istedenfor class og bare skrive #brending i a taggen.
+
+Bruke ChatGPT til å finne ut at jeg burde bruke texarea og ikke input når det er større text
+
+Kilde til hvordan jeg fant ut  hvordan jeg skulle legge til kart:
+https://blog.hubspot.com/website/how-to-embed-google-map-in-html
