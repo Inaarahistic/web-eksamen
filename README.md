@@ -16,3 +16,6 @@ Bruke ChatGPT til å finne ut at jeg burde bruke texarea og ikke input når det 
 
 Kilde til hvordan jeg fant ut  hvordan jeg skulle legge til kart:
 https://blog.hubspot.com/website/how-to-embed-google-map-in-html
+
+Brukte denne kilden til å lage "til toppen" knapp:
+https://www.w3schools.com/howto/howto_js_scroll_to_top.asp

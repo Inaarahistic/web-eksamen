@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <header class="header-container">
+    <header id="header-container">
       <nav>
         <ul>
           <li><a href="index.html"><img src="img/logo2.png" alt="logo" id="logo"></a></li>
@@ -25,7 +25,7 @@
       </nav>
     </header>
 
-    <main class="main-container3">
+    <main id="main-container3">
 
       <section class="img4">
         <img src="img/startup-593341_1280.jpg" alt="a table with laptop and notebooks" class="img4-img">
@@ -112,11 +112,11 @@
         
       </section>
       <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.2104093292212!2d11.349786676686671!3d59.12887992705012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1sen!2sno!4v1700982020115!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.2104093292212!2d11.349786676686671!3d59.12887992705012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1sen!2sno!4v1700982020115!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
 
-    <footer class="footer-container2">
+    <footer id="footer-container2">
       <section class="footer-logo">
         <img class="logo2-img" src="img/logo2.png" alt="logo">
       </section>
@@ -132,6 +132,30 @@
       </ul>
 
     </footer>
+
+    <button onclick="topFunction()" id="to-the-top" title="Go to top"><i id="arrow" class="fa-solid fa-arrow-up"></i></button>
+
+    <script>
+     
+      let mybutton = document.getElementById("to-the-top");
+      
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+     
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
 
 
 
