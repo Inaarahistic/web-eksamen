@@ -15,16 +15,15 @@
 /* HEADER */
 header{
   grid-area:header;
-  display:flex;
-  justify-content: center;
   margin:15px;
   padding:30px;
+ 
 }
 #logo{
-  display:flex;
-  justify-content: center;
+  display:block;
   width:80px;
 }
+
 nav ul li{
   display:flex;
   justify-content: center;
@@ -279,6 +278,7 @@ nav ul li{
     justify-content: end;
     padding-top:20px;;
     gap:10px;
+    margin-right:10px;
   }
   nav ul li{
     align-items:center;
@@ -297,6 +297,7 @@ nav ul li{
     padding:0;
     margin:0;
     display:inline;
+    margin-left:20px;
   }
   .contact-btn{
     margin:0;
@@ -307,6 +308,14 @@ nav ul li{
     cursor:pointer;
   }
   /* IMG1 */
+  .img1-service{
+    padding:10px;
+  }
+  .img1-service:hover{
+    color: #e6bd43;
+    background-color: black;
+    cursor:pointer;
+  }
   .mountains{
     display:block;
     width:100%;
@@ -327,15 +336,8 @@ nav ul li{
     padding-left:150px;
     padding-right:150px;
   }
-  /* IMG1 */
-  .img1-service{
-    padding:10px;
-  }
-  .img1-service:hover{
-    color: #e6bd43;
-    background-color: black;
-    cursor:pointer;
-  }
+  
+ 
   /* IMG2 */
   .img2-img{
     height:400px;
@@ -360,8 +362,13 @@ nav ul li{
   }
   /* SERVICES */
   .people, .cloud, .code, .wifi{
-    width:200px;
-    padding:30px;
+    width:300px;
+    
+  }
+  .services h2{
+    padding-top:50px;
+    padding-bottom:30px;
+   
   }
   .services-icons{
     display:flex;
@@ -460,6 +467,8 @@ nav ul li{
 }
 .explore-p{
   margin-bottom:20px;
+  display:flex;
+  justify-content: start;
 }
 .explore-branding, .explore-design, .explore-development{
   padding:10px;
@@ -474,7 +483,7 @@ nav ul li{
   margin-left:40px;
   margin-right:40px;
 }
-.brending-img{
+.brending-img1, .brending-img2, .brending-img3, .brending-img4{
   object-fit: cover;
   width:100%;
   margin-top:30px;
@@ -598,6 +607,114 @@ nav ul li{
   color:white;
   font-size:25px;
 }
+
+/* MEDIA PRODUCTS */
+@media only screen and (min-width: 1000px) {
+  #main-container2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.7fr 0.5fr 0.3fr;
+    grid-template-areas: 
+    "img3 img3 img3"
+    "explore explore explore"
+    "brending brending brending"
+    "design design design"
+    "development development development";
+  }
+  /* IMG3 */
+  .portfolio{
+    font-size:45px;
+  }
+  /* EXPLORE */
+  .explore-branding:hover{
+    background:rgb(0, 0, 0);
+    color:#e6bd43;
+    cursor:pointer;
+    border:none;
+  }
+  a.explore-design:hover{
+    background:rgb(0, 0, 0);
+    color:#e6bd43;
+    cursor:pointer;
+    border:none;
+  }
+  a.explore-development:hover{
+    background:rgb(0, 0, 0);
+    color:#e6bd43;
+    cursor:pointer;
+    border:none;
+  }
+  /* BRENDING */
+  .brending-img123{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+  }
+  .brending-img1, .brending-img2, .brending-img3{
+    width:460px;
+    height:500px;
+  }
+  .brending1-section, .brending2-section, .brending3-section{
+    transition: transform 0.3s ease-in-out;
+  }
+  .brending1-section:hover{
+    transform: scale(1.1);
+  }
+  .brending2-section:hover{
+    transform: scale(1.1);
+  }
+  .brending3-section:hover{
+    transform: scale(1.1);
+  }
+  .brending4-section:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  .brending-img4{
+    width:700px;
+    height:500px;
+  }
+  /* DESIGN */
+  .design-section{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    justify-content: center;
+  }
+  /* DEVELOPMENT */
+  .development-section{
+    display:flex;
+    flex-wrap:wrap;
+    
+    justify-content: space-between;
+  }
+  .development-img{
+    width:720px;
+    height:700px;
+  
+  }
+  /* FOOTER */
+  #footer-container2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:   1fr;
+    grid-template-areas: 
+   
+    "logo2 footer-p social"
+  }
+  .footer-logo{
+    display:flex;
+    justify-content: left;
+  }
+  .footer-p{
+    align-items:center;
+  }
+  .social-ul{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+  }
+  }
 /* ABOUT */
 #main-container3{
   display:grid;
@@ -607,6 +724,7 @@ nav ul li{
   "img4"
   "services"
   "clients"
+  "contact-us-h2"
   "contact-us"
   "contact-info"
   "map";
@@ -621,7 +739,6 @@ nav ul li{
 /* IMG4 */
 .img4{
   grid-area: img4;
-
   position:relative;
   display:inline-block;
 }
@@ -631,7 +748,6 @@ nav ul li{
   height:750px;
 }
 .img4-p{
-  
   padding: 40px;
   background: rgba(255, 255, 255, 0.8);
   transform: translate(-50%, -50%);
@@ -641,6 +757,7 @@ nav ul li{
   width:50%;
   text-align:left;
   max-height:800px;
+  box-sizing: border-box;
 }
 .img4-company{
   padding-bottom:30px;
@@ -649,6 +766,14 @@ nav ul li{
   padding-bottom:15px;
   padding-right:20px;
   font-weight:800;
+}
+.touch-btn{
+  background-color: #e6bd43;
+  padding:10px;
+  font-weight:bold;
+  margin-top:20px;
+  display:inline-block;
+  
 }
 /* SERVICES */
 .services{
@@ -674,21 +799,22 @@ nav ul li{
   display:flex;
   justify-content: center;
   gap:50px;
+  flex-wrap:wrap;
 }
-.logo3{
-  display:block;
-  margin: 0 auto;
-}
+
 /* CONTACT US */
 .contact-us{
   grid-area: contact-us;
   background-color:rgb(236, 235, 235);
   padding:20px;
 }
-.contact-us h2{
-  padding:20px;
+.contact-us-h2{
+  grid-area:contact-us-h2;
+  padding:10px;
   display:flex;
   justify-content: center;
+  background-color:rgb(236, 235, 235);
+  align-items:center;
 }
 .contact-us h3{
   padding-bottom:10px;
@@ -763,6 +889,80 @@ nav ul li{
   object-fit: cover;
   width:100%;
 }
+
+/* MEDIA ABOUT */
+@media only screen and (min-width: 1000px) {
+  #main-container3{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.8fr 0.6fr 0.3fr 0.8fr 0.3fr;
+    grid-template-areas: 
+    "img4 img4 img4 img4"
+    "services services services services"
+    "clients clients clients clients"
+    "contact-us-h2 contact-us-h2 contact-us-h2 contact-us-h2"
+    "contact-us  contact-us  contact-info contact-info"
+    "map map map map";
+  }
+  /* IMG4 */
+  .img4-img{
+    height:500px;
+  }
+  .img4-p{
+      padding: 30px;
+      left:74%;
+      width:670px;
+      height:370px;
+  }
+  .touch-btn:hover{
+    color:  #e6bd43;
+    background-color: rgb(0, 0, 0);
+    cursor:pointer;
+  }
+  /* CLIENTS */
+  .clients-img{
+    display:flex;
+    justify-content: center;
+    gap:50px;
+  }
+
+  /* CONTACT US */
+  .contact-us-h2{
+    grid-area:contact-us-h2;
+    font-size:40px;
+  }
+
+  /* CONTACT INFO */
+  .contact-info{
+    padding-right:190px;
+    padding-left:60px;
+  }
+
+  /* CONTACT US */
+  .contact-us{
+    padding-left:200px;
+  }
+  #name, #subject, #message{
+    width:600px;
+  }
+  .map-map{
+    height:260px;
+  }
+  .contact-us-submit:hover{
+    background:black;
+    color:#e6bd43;
+    cursor:pointer;
+  }
+
+
+
+
+
+
+
+
+
+
 #to-the-top{
   display: none; 
   position: fixed; 
@@ -780,3 +980,6 @@ nav ul li{
   color:white
 }
 
+
+
+}

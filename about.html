@@ -14,13 +14,13 @@
 
   <body>
     <header id="header-container">
-      <a  id="logo" href="index.html"><img  src="img/logo2.png" alt="logo"></a>
+      <a href="index.html"><img  id="logo" src="img/logo2.png" alt="logo"></a>
       <nav>
         <ul>
           <li class="home-btn3"><a href="index.html">Home</a></li>
           <li class="products-btn3"><a href="products.html">Portfolio</a></li>
           <li class="about-btn3"><a href="about.html">About</a></li>
-          <li class="contact-btn"><a href="#">Contact</a></li>
+          <li><a class="contact-btn" href="#contact-us-h2">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -36,54 +36,58 @@
           <p>Flamingo ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare justo vel fermentum dapibus. Curabitur tincidunt, tortor eu aliquet rhoncus, mauris augue tincidunt sem, at ullamcorper nunc ante a ligula. Fusce non ex eget velit semper tempus. Pellentesque sit amet tellus id leo fermentum cursus. Quisque vel turpis ut lacus ultrices ultricies. Nulla facilisi. Sed id magna sed sapien bibendum iaculis. Vivamus fringilla sapien vel turpis auctor, et blandit libero ultricies.
             Penguin ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. 
           </p>
+          <p><a class="touch-btn" href="#contact-us-h2">Get in touch with us</a></p>
         </section>
       </section>
 
-      <section class="services">
-          <h2 class="services-h2">Our Services</h2>
-  
+      <section class="services" id="services">
+        <h2>Our Services</h2>
+        <section class="services-icons">
+          
           <section class="people">
             <section class="people-icon"><i class="fa-solid fa-users"></i></section>
-            
             <h3>Branding</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus.</p>
           </section>
           
           <section class="cloud">
             <section class="cloud-icon"><i class="fa-solid fa-cloud-arrow-up"></i></section>
             
             <h3>Branding</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus.</p>
           </section>
-  
+
           <section class="code">
             <section class="code-icon"><i class="fa-solid fa-code"></i></section>
             
             <h3>Branding</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus.</p>
           </section>
           
           <section class="wifi">
             <section class="wifi-icon"><i class="fa-solid fa-wifi"></i></section>
             
             <h3>Branding</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus.</p>
           </section>
         </section>
+      </section>
 
       <section class="clients">
         <h2>Some of our clients</h2>
+
         <section class="clients-img">
           <img src="img/logo1.png" alt="logo1" class="logo1">
           <img src="img/logo2.png" alt="logo2" class="logo2">
+          <img src="img/logo3.png" alt="logo3" class="logo3">
         </section>
-        <img src="img/logo3.png" alt="logo3" class="logo3">
+        
         
       </section>
 
-
-      <section class="contact-us">
-        <h2>Contact us</h2>
+      <h2 id=contact-us-h2 class="contact-us-h2">Contact us</h2>
+      <section  class="contact-us">
+        
         <h3>Send us a message</h3>
         <form class="contact-us-form">
           <label class="name" for="name">Name</label>
@@ -118,18 +122,20 @@
 
     <footer id="footer-container2">
       <section class="footer-logo">
-        <img class="logo2-img" src="img/logo2.png" alt="logo">
+        <a href="index.html"><img class="logo2-img"  src="img/logo2.png" alt="logo"></a>
       </section>
 
       <section class="footer-p">
         <p>Companyrights Companyname 2023</p>
       </section>
       
-      <ul class="social">
-        <li><a  id="facebook" class="fab fa-facebook-square" href="https://www.facebook.com"></a></li>
-        <li><a id="twitter" class="fab fa-twitter-square" href="https://twitter.com/"></a></li>
-        <li><a id="instagram" class="fab fa-instagram-square" href="https://www.instagram.com"></a></li>
-      </ul>
+      <section class="social-ul">
+        <ul class="social">
+          <li><a  id="facebook" class="fab fa-facebook-square" href="https://www.facebook.com"></a></li>
+          <li><a id="twitter" class="fab fa-twitter-square" href="https://twitter.com/"></a></li>
+          <li><a id="instagram" class="fab fa-instagram-square" href="https://www.instagram.com"></a></li>
+        </ul>
+    </section>
 
     </footer>
 
@@ -155,7 +161,7 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
-      </script>
+    </script>
 
 
 

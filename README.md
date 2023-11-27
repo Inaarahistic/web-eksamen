@@ -19,3 +19,10 @@ https://blog.hubspot.com/website/how-to-embed-google-map-in-html
 
 Brukte denne kilden til å lage "til toppen" knapp:
 https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+
+Brukte denne nettsiden til å konvertere video til gif:
+https://ezgif.com/video-to-gif/ezgif-5-1d58215fc7.mp4
+
+Brukte ChatGPT til å finne ut hvordan jeg skulle forstærre bilde ved hovring. Jeg ville også at det skulle skje mykere så det fant jeg også ut av og la til.
+
+Brukte ChatGPT til å finne ut hvordan jeg skulle linke til en spesifikk seksjon på en annen nettside.
