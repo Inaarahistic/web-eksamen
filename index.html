@@ -14,19 +14,23 @@
 
   <body>
     <header id="header-container">
+      
+      <a   href="index.html"><img id="logo"  src="img/logo2.png" alt="logo"></a>
       <nav>
         <ul>
-          <li id="logo"><a href="index.html"><img src="img/logo2.png" alt="logo" ></a></li>
-          <li class="home-btn"><a href="index.html">Home</a></li>
-          <li class="products-btn"><a href="products.html">Portfolio</a></li>
-          <li class="about-btn"><a href="about.html">About</a></li>
-          <li class="contact-btn"><a href="#">Contact</a></li>
+          <li class="home-btn1"><a href="index.html">Home</a></li>
+          <li class="products-btn1"><a href="products.html">Portfolio</a></li>
+          <li class="about-btn1"><a href="about.html">About</a></li>
+          <li><a class="contact-btn" href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main id="main-container1">
 
       <section class="img1">
+        
+        <img class="mountains" src="img/ezgif.com-video-to-gif.gif" type="gif">
+       
         <img width="600" height="400" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe" class="img1-img">
         <section class="img1-text">
           <h1 class="img1-h1">Compelling headline</h1>
@@ -48,7 +52,7 @@
       <section class="text2">
         <h2>About our company</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidun consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric. consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric </p>
-        <p><aclass="text2-read-more" href="about.html">Read more about us</a></p>
+        <p><a class="text2-read-more" href="about.html">Read more about us</a></p>
       </section>
 
       <section class="services" id="services">
@@ -102,12 +106,39 @@
         <p>Companyrights Companyname 2023</p>
       </section>
       
-      <ul class="social">
-        <li><a  id="facebook" class="fab fa-facebook-square" href="https://www.facebook.com"></a></li>
-        <li><a id="twitter" class="fab fa-twitter-square" href="https://twitter.com/"></a></li>
-        <li><a id="instagram" class="fab fa-instagram-square" href="https://www.instagram.com"></a></li>
-      </ul>
+      <section class="social-ul">
+        <ul class="social">
+          <li><a  id="facebook" class="fab fa-facebook-square" href="https://www.facebook.com"></a></li>
+          <li><a id="twitter" class="fab fa-twitter-square" href="https://twitter.com/"></a></li>
+          <li><a id="instagram" class="fab fa-instagram-square" href="https://www.instagram.com"></a></li>
+        </ul>
+      </section>
+    
     </footer>
+    <button onclick="topFunction()" id="to-the-top" title="Go to top"><i id="arrow" class="fa-solid fa-arrow-up"></i></button>
+
+    <script>
+     
+      let mybutton = document.getElementById("to-the-top");
+      
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+     
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+
 
     
   </body>
