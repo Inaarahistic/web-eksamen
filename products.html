@@ -3,29 +3,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
+    
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css"> 
+    <script src="https://kit.fontawesome.com/454e802897.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="portfolio">
+    <meta name="keywords" content="portfolio, explore, brending, design, development">
     <meta name="author" content="Liza Bachalova">
     <meta name="description" content="Portfolio page">
-    <script src="https://kit.fontawesome.com/454e802897.js" crossorigin="anonymous"></script>
+
+    <!--Facebook meta-->
+
+    <meta property="og:title" content="Portfolio">
+    <meta property="og:url" content="https://itstud.hiof.no/~lizaab/web-eksamen/products.html">
+    <meta property="og:image" content="img/startup-593341_1280">
+    <meta property="og:description" content="Portfolio page">
+    <meta property="og:type" content="website">
+    
+   
   </head>
 
   <body>
     
     <header id="header-container">
-      <section class="logo-section">
-        <a href="index.html">
-          <img id="logo"  src="img/logo2.png" alt="logo">
+      <section itemscope itemtype="http://schema.org/Organization" class="logo-section">
+        <a itemprop="url"   title="Home" href="index.html">
+          <img itemprop="logo" id="logo"  src="img/logo2.png" alt="grey-logo">
         </a>
       </section>
       <nav>
         <ul>
-          <li class="home-btn2"><a href="index.html">Home</a></li>
-          <li class="products-btn2"><a href="products.html">Portfolio</a></li>
-          <li class="about-btn2"><a href="about.html">About</a></li>
-          <li><a class="contact-btn" href="about.html#contact-us-h2">Contact</a></li>
+          <li class="home-btn2"><a tabindex="0" href="index.html">Home</a></li>
+          <li class="products-btn2"><a tabindex="0" href="products.html">Portfolio</a></li>
+          <li class="about-btn2"><a tabindex="0" href="about.html">About</a></li>
+          <li><a role="button" tabindex="0" title="Contact us" class="contact-btn" href="about.html#contact-us-h2">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -40,9 +55,9 @@
       <article class="explore">
         <h2>Explore previous jobs</h2>
           <section class="explore-p">
-            <p><a  class="explore-branding" href="#brending">Branding</a></p>
-            <p><a class="explore-design" href="#design">Design</a></p>
-            <p><a class="explore-development" href="#development">Development</a></p>
+            <p><a role="button" tabindex="0" title="Brending" class="explore-branding" href="#brending">Branding</a></p>
+            <p><a role="button" tabindex="0" title="Design" class="explore-design" href="#design">Design</a></p>
+            <p><a role="button" tabindex="0" title="Development" class="explore-development" href="#development">Development</a></p>
           </section>
       </article>
 
@@ -50,25 +65,31 @@
         <h2>Branding</h2>
         <section class="brending-section">
           <section class="brending1-section">
-
-            <img class="brending-img1" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+            <section class="brending-only-img" >
+              <img role="img" class="brending-img1" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+            </section>
             <h3>Sushi ipsum dolor sit amet</h3>
           </section>
 
           <section class="brending2-section">
-            
-            <img class="brending-img2" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+            <section class="brending-only-img">
+              <img  role="img" class="brending-img2" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+            </section>
             <h3>Sushi ipsum dolor sit amet</h3>
           </section>
 
           <section class="brending3-section">
-            <img class="brending-img3" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+            <section  class="brending-only-img">
+              <img role="img" class="brending-img3" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+            </section>
             <h3>Sushi ipsum dolor sit amet</h3>
           </section>
         
 
           <section class="brending4-section">
-            <img class="brending-img4" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+            <section  class="brending-only-img">
+              <img role="img" class="brending-img4" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+            </section>
             <h3>Sushi ipsum dolor sit amet</h3>
           </section>
         </section>
@@ -80,19 +101,18 @@
         <section class="design-section">
 
           <section class="design1-section">
-           
-            <img class="design-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+            <img role="img" class="design-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
             <h3>Sushi ipsum dolor sit amet</h3>
           </section>
 
           <section class="design2-section">
             
-            <img class="design-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+            <img role="img" class="design-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
             <h3>Sushi ipsum dolor sit amet</h3>
           </section>
 
           <section class="design3-section">
-            <img class="design-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+            <img role="img" class="design-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
             <h3>Sushi ipsum dolor sit amet</h3>
           </section>
           
@@ -104,12 +124,12 @@
         <h2>Development</h2>
         <section class="development-section">
           <section class="development1-section">
-            <img class="development-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+            <img role="img" class="development-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
             <h3>Sushi ipsum dolor sit amet</h3>
           </section>
 
           <section class="development2-section">
-            <img class="development-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
+            <img role="img" class="development-img" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe">
             <h3>Sushi ipsum dolor sit amet</h3>
           </section>
         </section>
@@ -121,23 +141,25 @@
     
 
     <footer id="footer-container2">
-      <section class="footer-logo">
-        <a href="index.html"><img class="logo2-img"  src="img/logo2.png" alt="logo"></a>
+      <section itemscope itemtype="http://schema.org/Organization" class="footer-logo">
+        <a itemprop="url"  title="Home" href="index.html">
+          <img itemprop="logo" class="logo2-img" src="img/logo2.png" alt="grey-logo">
+        </a>
       </section>
 
       <section class="footer-p">
         <p>Companyrights Companyname 2023</p>
       </section>
+      
       <section class="social-ul">
         <ul class="social">
-          <li><a  id="facebook" class="fab fa-facebook-square" href="https://www.facebook.com"></a></li>
-          <li><a id="twitter" class="fab fa-twitter-square" href="https://twitter.com/"></a></li>
-          <li><a id="instagram" class="fab fa-instagram-square" href="https://www.instagram.com"></a></li>
+          <li><a aria-label="Go to our Facebook page" tabindex="0" title="Facebook" id="facebook" class="fab fa-facebook-square" href="https://www.facebook.com" ></a></li>
+          <li><a aria-label="Go to our Linkedin page" tabindex="0" title="Linkedin" id="linkedin" class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/"></a></li>
+          <li><a aria-label="Go to our Instagram page" tabindex="0" title="Instagram" id="instagram" class="fab fa-instagram-square" href="https://www.instagram.com"></a></li>
         </ul>
       </section>
-
     </footer>
-    <button onclick="topFunction()" id="to-the-top" title="Go to top"><i id="arrow" class="fa-solid fa-arrow-up"></i></button>
+    <button aria-label="Go to the top" onclick="topFunction()" id="to-the-top" title="Go to top"><i id="arrow" class="fa-solid fa-arrow-up"></i></button>
     <script>
       let mybutton = document.getElementById("to-the-top");
       window.onscroll = function() {scrollFunction()};

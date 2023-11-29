@@ -3,28 +3,44 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>About</title>
+    
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css"> 
+    <script src="https://kit.fontawesome.com/454e802897.js" crossorigin="anonymous"></script>
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="about">
+    <meta name="keywords" content="about, services, clients, contact us, contact information, adresse, map, number">
     <meta name="author" content="Liza Bachalova">
     <meta name="description" content="About page">
-    <script src="https://kit.fontawesome.com/454e802897.js" crossorigin="anonymous"></script>
+
+    <!--Facebook meta-->
+
+    <meta property="og:title" content="About">
+    <meta property="og:url" content="https://itstud.hiof.no/~lizaab/web-eksamen/about.html">
+    <meta property="og:image" content="img/startup-593341_1280">
+    <meta property="og:description" content="About us">
+    <meta property="og:type" content="website">
+    
+    
   </head>
 
   <body>
     <header id="header-container">
-      <section class="logo-section">
-        <a href="index.html">
-          <img id="logo"  src="img/logo2.png" alt="logo">
+      <section itemscope itemtype="http://schema.org/Organization" class="logo-section">
+        <a itemprop="url"   title="Home" href="index.html">
+          <img itemprop="logo" id="logo"  src="img/logo2.png" alt="grey-logo">
         </a>
       </section>
       <nav>
         <ul>
-          <li class="home-btn3"><a href="index.html">Home</a></li>
-          <li class="products-btn3"><a href="products.html">Portfolio</a></li>
-          <li class="about-btn3"><a href="about.html">About</a></li>
-          <li><a class="contact-btn" href="about.html#contact-us-h2">Contact</a></li>
+          <li class="home-btn3"><a tabindex="0" title="Home" href="index.html">Home</a></li>
+          <li class="products-btn3"><a tabindex="0" title="Portfolio" href="products.html">Portfolio</a></li>
+          <li class="about-btn3"><a tabindex="0" title="About" href="about.html">About</a></li>
+          <li><a role="button" tabindex="0" title="Contact us" class="contact-btn" href="about.html#contact-us-h2">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -32,7 +48,7 @@
     <main id="main-container3">
 
       <article class="img4">
-        <img src="img/startup-593341_1280.jpg" alt="a table with laptop and notebooks" class="img4-img">
+        <img src="img/startup-593341_1280.jpg" alt="a table with laptop and notebooks" class="img4-img"> <!-- Pynt -->
         
           <section class="img4-p">
           
@@ -41,7 +57,7 @@
             <p>Flamingo ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare justo vel fermentum dapibus. Curabitur tincidunt, tortor eu aliquet rhoncus, mauris augue tincidunt sem, at ullamcorper nunc ante a ligula. Fusce non ex eget velit semper tempus. Pellentesque sit amet tellus id leo fermentum cursus. Quisque vel turpis ut lacus ultrices ultricies. Nulla facilisi. Sed id magna sed sapien bibendum iaculis. Vivamus fringilla sapien vel turpis auctor, et blandit libero ultricies.
               Penguin ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. 
             </p>
-            <p><a class="touch-btn" href="#contact-us-h2">Get in touch with us</a></p>
+            <p><a role="button" tabindex="0" title="Contact us" class="touch-btn" href="#contact-us-h2">Get in touch with us</a></p>
         
           </section>
        
@@ -84,9 +100,9 @@
         <h2>Some of our clients</h2>
 
         <section class="clients-img">
-          <img src="img/logo1.png" alt="logo1" class="logo1">
-          <img src="img/logo2.png" alt="logo2" class="logo2">
-          <img src="img/logo3.png" alt="logo3" class="logo3">
+          <img src="img/logo1.png" alt="grey-logo1" class="logo1">
+          <img src="img/logo2.png" alt="grey-logo2" class="logo2">
+          <img src="img/logo3.png" alt="grey-logo3" class="logo3">
         </section>
         
         
@@ -98,15 +114,15 @@
         <h3>Send us a message</h3>
         <form class="contact-us-form">
           <label class="name" for="name">Name</label>
-          <input id="name" class="contact-us-name" type="text" name="name" placeholder="Ola Nordman">
+          <input aria-label="Type your name here" tabindex="0" id="name" class="contact-us-name" type="text" name="name" placeholder="Ola Nordman">
 
           <label class="subject" for="subject">Subject</label>
-          <input id="subject" class="contact-us-subject" type="text" name="subject" placeholder="Branding">
+          <input aria-label="Type the subject here" tabindex="0" id="subject" class="contact-us-subject" type="text" name="subject" placeholder="Branding">
 
           <label class="message" for="message">Message</label>
-          <textarea id="message" class="contact-us-message" name="message"></textarea>
+          <textarea aria-label="Type the message here" tabindex="0" id="message" class="contact-us-message" name="message"></textarea>
 
-          <input class="contact-us-submit" type="submit" value="Send message">
+          <input role="button" tabindex="0" class="contact-us-submit" type="submit" value="Send message">
         </form>
       </article>
 
@@ -115,21 +131,23 @@
         <p>Flamingo ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare justo vel fermentum dapibus. Curabitur tincidunt, tortor eu aliquet rhoncus, mauris augue tincidunt sem, at ullamcorper nunc ante a ligula. Fusce non ex eget velit semper tempus.  </p>
         
         <ul>
-          <li><i id="pin" class="fa-solid fa-location-pin"></i><a class="adresse">B R A veien 4, 1757 Halden</a></li>
-          <li><i id="envelope" class="fa-solid fa-envelope"></i><a class="nummer">69 60 80 80</a></li>
-          <li><i id="phone" class="fa-solid fa-phone"></i><a class="hiof">postmottak@hiof.no</a></li>
+          <li><i id="pin" class="fa-solid fa-location-pin"></i><a title="Adresse" class="adresse">B R A veien 4, 1757 Halden</a></li>
+          <li><i id="envelope" class="fa-solid fa-envelope"></i><a title="Nummer" class="nummer">69 60 80 80</a></li>
+          <li><i id="phone" class="fa-solid fa-phone"></i><a title="Nummer" class="hiof">postmottak@hiof.no</a></li>
         </ul>
        
         
       </article>
       <section class="map">
-        <iframe class="map-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.2104093292212!2d11.349786676686671!3d59.12887992705012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1sen!2sno!4v1700982020115!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.2104093292212!2d11.349786676686671!3d59.12887992705012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1sen!2sno!4v1700982020115!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="google map"></iframe>
       </section>
     </main>
 
     <footer id="footer-container2">
-      <section class="footer-logo">
-        <a href="index.html"><img class="logo2-img"  src="img/logo2.png" alt="logo"></a>
+      <section itemscope itemtype="http://schema.org/Organization" class="footer-logo">
+        <a itemprop="url"  title="Home" href="index.html">
+          <img itemprop="logo" class="logo2-img" src="img/logo2.png" alt="grey-logo">
+        </a>
       </section>
 
       <section class="footer-p">
@@ -138,15 +156,14 @@
       
       <section class="social-ul">
         <ul class="social">
-          <li><a  id="facebook" class="fab fa-facebook-square" href="https://www.facebook.com"></a></li>
-          <li><a id="twitter" class="fab fa-twitter-square" href="https://twitter.com/"></a></li>
-          <li><a id="instagram" class="fab fa-instagram-square" href="https://www.instagram.com"></a></li>
+          <li><a aria-label="Go to our Facebook page" tabindex="0" title="Facebook" id="facebook" class="fab fa-facebook-square" href="https://www.facebook.com" ></a></li>
+          <li><a aria-label="Go to our Linkedin page" tabindex="0" title="Linkedin" id="linkedin" class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/"></a></li>
+          <li><a aria-label="Go to our Instagram page" tabindex="0" title="Instagram" id="instagram" class="fab fa-instagram-square" href="https://www.instagram.com"></a></li>
         </ul>
-    </section>
-
+      </section>
     </footer>
 
-    <button onclick="topFunction()" id="to-the-top" title="Go to top"><i id="arrow" class="fa-solid fa-arrow-up"></i></button>
+    <button aria-label="Go to the top" onclick="topFunction()" id="to-the-top" title="Go to top"><i id="arrow" class="fa-solid fa-arrow-up"></i></button>
 
     <script>
      

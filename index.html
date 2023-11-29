@@ -3,42 +3,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css"> 
+    <script src="https://kit.fontawesome.com/454e802897.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="home">
+    <meta name="keywords" content="home, about us, our services, brending, newsletter">
     <meta name="author" content="Liza Bachalova">
     <meta name="description" content="Home page">
-    <script src="https://kit.fontawesome.com/454e802897.js" crossorigin="anonymous"></script>
+
+    <!--Facebook meta-->
+
+    <meta property="og:title" content="Home">
+    <meta property="og:url" content="https://itstud.hiof.no/~lizaab/web-eksamen/index.html">
+    <meta property="og:image" content="img/startup-593341_1280">
+    <meta property="og:description" content="Home page">
+    <meta property="og:type" content="website">
+    
+    
+    
   </head>
 
   <body>
     <header id="header-container">
-      <section class="logo-section">
-        <a href="index.html">
-          <img id="logo"  src="img/logo2.png" alt="logo">
+      <section itemscope itemtype="http://schema.org/Organization" class="logo-section">
+        <a itemprop="url"   title="Home" href="index.html">
+          <img itemprop="logo" id="logo"  src="img/logo2.png" alt="grey-logo">
         </a>
       </section>
       <nav>
         <ul>
-          <li class="home-btn1"><a href="index.html">Home</a></li>
-          <li class="products-btn1"><a href="products.html">Portfolio</a></li>
-          <li class="about-btn1"><a href="about.html">About</a></li>
-          <li><a class="contact-btn" href="about.html#contact-us-h2">Contact</a></li>
+          <li class="home-btn1"><a tabindex="0" title="Home" href="index.html">Home</a></li>
+          <li class="products-btn1"><a tabindex="0" title="Portfolio" href="products.html">Portfolio</a></li>
+          <li class="about-btn1"><a  tabindex="0" title="About" href="about.html">About</a></li>
+          <li><a role="button" class="contact-btn" tabindex="0" title="Contact us"  href="about.html#contact-us-h2">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main id="main-container1">
 
       <section class="img1">
-        
-        <img alt="mountains" class="mountains" src="img/ezgif.com-video-to-gif.gif">
-       
-        <img width="600" height="400" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe" class="img1-img">
+        <video autoplay loop muted class="mountains-video">
+          <source class="mountains" src="img/mountains.mp4" type="video/mp4"> <!-- Pynt -->
+        </video>
+
+        <img width="600" height="400" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe" class="img1-img"> <!-- Pynt -->
         <article class="img1-text">
           <h1 class="img1-h1">Compelling headline</h1>
           <p class="img1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric. </p>
-          <p ><a class="img1-service" href="#services">Read more about our services</a></p>
+          <p><a role="button" tabindex="0" title="Our Services" class="img1-service" href="#services">Read more about our services</a></p>
         </article>
       </section>
       
@@ -48,13 +65,13 @@
       </article>
 
       <section class="img2-container">
-        <img src="img/startup-593341_1280.jpg" alt="a table with laptop and notebooks" class="img2-img">
+        <img src="img/startup-593341_1280.jpg" alt="a table with laptop and notebooks" class="img2-img"> <!-- Pynt -->
       </section>
 
       <article class="text2">
         <h2>About our company</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidun consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric. consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric </p>
-        <p><a class="text2-read-more" href="about.html">Read more about us</a></p>
+        <p><a role="button" tabindex="0" title="About us" class="text2-read-more" href="about.html">Read more about us</a></p>
       </article>
 
       <section class="services" id="services">
@@ -69,39 +86,39 @@
           
           <article class="cloud">
             <section class="cloud-icon"><i class="fa-solid fa-cloud-arrow-up"></i></section>
-            
             <h3>Branding</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus.</p>
           </article>
 
           <article class="code">
             <section class="code-icon"><i class="fa-solid fa-code"></i></section>
-            
+
             <h3>Branding</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus.</p>
           </article>
           
           <article class="wifi">
             <section class="wifi-icon"><i class="fa-solid fa-wifi"></i></section>
-            
             <h3>Branding</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus.</p>
           </article>
         </section>
       </section>
-    </main>
-
-    <footer id="footer-container1">
       <article class="newsletter">
         <h2 class="newsletter-h2">Sign up for our newsletter</h2>
         <form class="newsletter-form">
-          <input class="newsletter-epost" type="text" name="email" placeholder="Nora@epost.no">
-          <input class="newsletter-submit" type="submit" value="Sign me up!">
+          <label for="newsletter-epost" hidden>Epost</label>
+          <input aria-label="Type your email here" tabindex="0" id="newsletter-epost" class="newsletter-epost" type="text" name="email" placeholder="Nora@epost.no">
+          <input role="button" tabindex="0" id="newsletter-submit" class="newsletter-submit" type="submit" value="Sign me up!">
         </form>
       </article>
+    </main>
 
-      <section class="footer-logo">
-        <a href="index.html"><img class="logo2-img" src="img/logo2.png" alt="logo"></a>
+    <footer id="footer-container1">
+      <section itemscope itemtype="http://schema.org/Organization" class="footer-logo">
+        <a itemprop="url"  title="Home" href="index.html">
+          <img itemprop="logo" class="logo2-img" src="img/logo2.png" alt="grey-logo">
+        </a>
       </section>
 
       <section class="footer-p">
@@ -110,14 +127,14 @@
       
       <section class="social-ul">
         <ul class="social">
-          <li><a  id="facebook" class="fab fa-facebook-square" href="https://www.facebook.com"></a></li>
-          <li><a id="twitter" class="fab fa-twitter-square" href="https://twitter.com/"></a></li>
-          <li><a id="instagram" class="fab fa-instagram-square" href="https://www.instagram.com"></a></li>
+          <li><a aria-label="Go to our Facebook page" tabindex="0" title="Facebook" id="facebook" class="fab fa-facebook-square" href="https://www.facebook.com" ></a></li>
+          <li><a aria-label="Go to our Linkedin page" tabindex="0" title="Linkedin" id="linkedin" class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/"></a></li>
+          <li><a aria-label="Go to our Instagram page" tabindex="0" title="Instagram" id="instagram" class="fab fa-instagram-square" href="https://www.instagram.com"></a></li>
         </ul>
       </section>
     </footer>
 
-    <button onclick="topFunction()" id="to-the-top" title="Go to top"><i id="arrow" class="fa-solid fa-arrow-up"></i></button>
+    <button aria-label="Go to the top" onclick="topFunction()" id="to-the-top" title="Go to top"><i id="arrow" class="fa-solid fa-arrow-up"></i></button>
     <script>
       let mybutton = document.getElementById("to-the-top");
       window.onscroll = function() {scrollFunction()};
