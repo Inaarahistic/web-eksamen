@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css"> 
     <script src="https://kit.fontawesome.com/454e802897.js" crossorigin="anonymous"></script>
     <title>About</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -49,6 +50,7 @@
     <main id="main-container3">
 
       <article class="img4">
+        <!--Image by <a href="https://pixabay.com/users/startupstockphotos-690514/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=593341">StartupStockPhotos</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=593341">Pixabay</a>-->
         <img src="img/startup-593341_1280.jpg" alt="a table with laptop and notebooks" class="img4-img"> <!-- Pynt -->
         
           <section itemscope itemtype="https://schema.org/CreativeWork" class="img4-p">
@@ -121,34 +123,36 @@
           <input aria-label="Type the subject here" tabindex="0" id="subject" class="contact-us-subject" type="text" name="subject" placeholder="Branding">
 
           <label class="message" for="message">Message</label>
+          <!--Bruke ChatGPT til å finne ut at jeg burde bruke <textarea> og ikke input når det er større text.-->
           <textarea aria-label="Type the message here" tabindex="0" id="message" class="contact-us-message" name="message"></textarea>
 
           <input role="button" tabindex="0" class="contact-us-submit" type="submit" value="Send message">
         </form>
       </article>
 
-      <article itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="contact-info">
+      <article class="contact-info">
         <h2>Contact information</h2>
         <p>Flamingo ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare justo vel fermentum dapibus. Curabitur tincidunt, tortor eu aliquet rhoncus, mauris augue tincidunt sem, at ullamcorper nunc ante a ligula. Fusce non ex eget velit semper tempus.  </p>
         
-        <ul>
+        <ul itemscope itemtype="https://schema.org/PostalAddress">
           <li >
             <i id="pin" class="fa-solid fa-location-pin"></i>
-            <a itemprop="streetAddress"  title="Adresse" class="adresse">B R A veien 4, 1757 Halden</a>
+            <p itemprop="streetAddress"  title="Adresse" class="adresse">B R A veien 4, 1757 Halden</p>
           </li>
           <li>
             <i id="envelope" class="fa-solid fa-envelope"></i>
-            <a itemprop="telephone" title="Nummer" class="nummer">69 60 80 80</a>
+            <p itemprop="telephone" title="Nummer" class="nummer">69 60 80 80</p>
           </li>
           <li>
             <i  id="phone" class="fa-solid fa-phone"></i>
-            <a itemprop="email" title="Nummer" class="hiof">postmottak@hiof.no</a>
+            <p itemprop="email" title="Email" class="hiof">postmottak@hiof.no</p>
           </li>
         </ul>
        
         
       </article>
       <section class="map">
+        <!--Kilde til hvordan jeg fant ut hvordan jeg skulle legge til kart: https://blog.hubspot.com/website/how-to-embed-google-map-in-html-->
         <iframe class="map-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.2104093292212!2d11.349786676686671!3d59.12887992705012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1sen!2sno!4v1700982020115!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="google map"></iframe>
       </section>
     </main>
@@ -173,6 +177,7 @@
       </section>
     </footer>
 
+    <!--Brukte denne kilden til å lage "til toppen" knapp: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
     <button aria-label="Go to the top" onclick="topFunction()" id="to-the-top" title="Go to top"><i id="arrow" class="fa-solid fa-arrow-up"></i></button>
 
     <script>

@@ -50,6 +50,9 @@ nav ul li{
   padding-bottom:10px;
   font-size:14px;
   }
+
+  /* text-underline-offset kilde:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-underline-offset */ 
 .home-btn1{
   text-decoration: underline;
   text-underline-offset:5px;
@@ -456,6 +459,18 @@ nav ul li{
     object-fit: cover;
     height:350px;
   }
+
+  /* Brukte ChatGPT til å finne ut hvordan jeg skulle forstørre bilde ved hovring. Jeg ville også at det skulle skje mykere så det fant jeg også ut av og la til.*/
+  .mountains-back{
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    position:absolute;
+    width:100%;
+    background:rgba(255, 255, 255, 0.3);
+    height:100%;
+  }
+
   .img1-img{
     display:none;
   }
@@ -823,6 +838,7 @@ nav ul li{
   }
   /* BRENDING */
 
+  /* Brukte ChatGPT til å finne ut hvordan jeg skulle forstørre bilde ved hovring. Jeg ville også at det skulle skje mykere så det fant jeg også ut av og la til.*/
   .brending1-section, .brending2-section, .brending3-section, .brending4-section{
     transition: transform 0.3s ease-in-out;
   }

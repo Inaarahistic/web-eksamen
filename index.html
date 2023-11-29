@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css"> 
     <script src="https://kit.fontawesome.com/454e802897.js" crossorigin="anonymous"></script>
     <title>Home</title>
+    <!--Brukte denne siden til å konvertere img til favicon: https://favicon.io/favicon-converter/-->
+    <!--Brukte denne side til å finne ut hvordan jeg skulle lette til html: https://www.w3schools.com/html/html_favicon.asp-->
+    <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -40,6 +43,7 @@
           <li class="home-btn1"><a tabindex="0" title="Home" href="index.html">Home</a></li>
           <li class="products-btn1"><a tabindex="0" title="Portfolio" href="products.html">Portfolio</a></li>
           <li class="about-btn1"><a  tabindex="0" title="About" href="about.html">About</a></li>
+          <!--Brukte ChatGPT til å finne ut hvordan jeg skulle linke til en spesifikk seksjon på en annen nettside. Det la jeg også til.-->
           <li><a role="button" class="contact-btn" tabindex="0" title="Contact us"  href="about.html#contact-us-h2">Contact</a></li>
         </ul>
       </nav>
@@ -50,12 +54,15 @@
         <video autoplay loop muted class="mountains-video">
           <source class="mountains" src="img/mountains.mp4" type="video/mp4"> <!-- Pynt -->
         </video>
+        <section class="mountains-back"></section>
 
+        <!--Image by <a href="https://pixabay.com/users/freephotocc-2275370/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1280537">Free Photos</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1280537">Pixabay</a>-->
         <img width="600" height="400" src="img/cup-of-coffee-1280537_1280.jpg" alt="cup of coffe" class="img1-img"> <!-- Pynt -->
         <article class="img1-text">
           <h1 class="img1-h1">Compelling headline</h1>
           <p class="img1-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric. </p>
           <p><a role="button" tabindex="0" title="Our Services" class="img1-service" href="#services">Read more about our services</a></p>
+          <!--Jeg brukte ChatGPT til å finne ut hvordan jeg skulle linke til en seksjon på samme side.-->
         </article>
       </section>
       
@@ -65,12 +72,14 @@
       </article>
 
       <section class="img2-container">
+        <!-- Image by <a href="https://pixabay.com/users/startupstockphotos-690514/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=593341">StartupStockPhotos</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=593341">Pixabay</a> -->
         <img src="img/startup-593341_1280.jpg" alt="a table with laptop and notebooks" class="img2-img"> <!-- Pynt -->
       </section>
 
       <article itemscope itemtype="https://schema.org/CreativeWork" class="text2">
         <h2>About our company</h2>
         <p itemprop="about" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl nec tincidun consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric. consectetur adipiscing elit. Nulla euismod, nisl nec tincidunt dapibus, velit diam ultrices nunc, quis ultric </p>
+        <!--Brukte denne siden til å skrive aria-labels: https://www.aditus.io/aria/aria-label/ -->
         <p><a role="button" tabindex="0" title="About us" class="text2-read-more" href="about.html">Read more about us</a></p>
       </article>
 
@@ -152,3 +161,5 @@
       </script>
   </body>
 </html>
+
+<!--Hva er innhold og hva er pynt? På hjemmesiden er videoen som heter mountains-video er pynt og de to andre bilder er pynt. På portfolio siden er den første bile i bakgrunnen pynt, alle de andre er innhold. I about siden er det første, og eneste bilde også pynt. -->
