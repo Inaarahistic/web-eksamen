@@ -26,6 +26,7 @@
     <meta property="og:type" content="website">
     
     
+    
   </head>
 
   <body>
@@ -50,11 +51,11 @@
       <article class="img4">
         <img src="img/startup-593341_1280.jpg" alt="a table with laptop and notebooks" class="img4-img"> <!-- Pynt -->
         
-          <section class="img4-p">
+          <section itemscope itemtype="https://schema.org/CreativeWork" class="img4-p">
           
             <p class="img4-company">Company name</p>
             <h1>About our company</h1>
-            <p>Flamingo ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare justo vel fermentum dapibus. Curabitur tincidunt, tortor eu aliquet rhoncus, mauris augue tincidunt sem, at ullamcorper nunc ante a ligula. Fusce non ex eget velit semper tempus. Pellentesque sit amet tellus id leo fermentum cursus. Quisque vel turpis ut lacus ultrices ultricies. Nulla facilisi. Sed id magna sed sapien bibendum iaculis. Vivamus fringilla sapien vel turpis auctor, et blandit libero ultricies.
+            <p itemprop="about">Flamingo ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare justo vel fermentum dapibus. Curabitur tincidunt, tortor eu aliquet rhoncus, mauris augue tincidunt sem, at ullamcorper nunc ante a ligula. Fusce non ex eget velit semper tempus. Pellentesque sit amet tellus id leo fermentum cursus. Quisque vel turpis ut lacus ultrices ultricies. Nulla facilisi. Sed id magna sed sapien bibendum iaculis. Vivamus fringilla sapien vel turpis auctor, et blandit libero ultricies.
               Penguin ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. 
             </p>
             <p><a role="button" tabindex="0" title="Contact us" class="touch-btn" href="#contact-us-h2">Get in touch with us</a></p>
@@ -126,14 +127,23 @@
         </form>
       </article>
 
-      <article class="contact-info">
+      <article itemprop="address" itemscope itemtype="https://schema.org/PostalAddress" class="contact-info">
         <h2>Contact information</h2>
         <p>Flamingo ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare justo vel fermentum dapibus. Curabitur tincidunt, tortor eu aliquet rhoncus, mauris augue tincidunt sem, at ullamcorper nunc ante a ligula. Fusce non ex eget velit semper tempus.  </p>
         
         <ul>
-          <li><i id="pin" class="fa-solid fa-location-pin"></i><a title="Adresse" class="adresse">B R A veien 4, 1757 Halden</a></li>
-          <li><i id="envelope" class="fa-solid fa-envelope"></i><a title="Nummer" class="nummer">69 60 80 80</a></li>
-          <li><i id="phone" class="fa-solid fa-phone"></i><a title="Nummer" class="hiof">postmottak@hiof.no</a></li>
+          <li >
+            <i id="pin" class="fa-solid fa-location-pin"></i>
+            <a itemprop="streetAddress"  title="Adresse" class="adresse">B R A veien 4, 1757 Halden</a>
+          </li>
+          <li>
+            <i id="envelope" class="fa-solid fa-envelope"></i>
+            <a itemprop="telephone" title="Nummer" class="nummer">69 60 80 80</a>
+          </li>
+          <li>
+            <i  id="phone" class="fa-solid fa-phone"></i>
+            <a itemprop="email" title="Nummer" class="hiof">postmottak@hiof.no</a>
+          </li>
         </ul>
        
         
